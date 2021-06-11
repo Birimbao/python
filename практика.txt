@@ -1,0 +1,19 @@
+#1 import matplotlib.pyplot as plt
+plt.subplot(2, 1, 1)
+plt.title("Зависимости: y1 = x, y2 = x^2")
+plt.xlabel("x") 
+plt.ylabel("y1")
+plt.grid()
+plt.plot([1,2,3,4],[1,2,3,4],'r--')
+plt.subplot(2, 1, 2)
+plt.xlabel('x')
+plt.ylabel('y2')
+plt.grid() 
+plt.plot([1,2,3,4], [1,4,9,16]) 
+plt.show()
+
+#2  import matplotlib.pyplot as plt
+x=['a','b','c','d','f']
+y=[1,3,5,7,9]
+plt.bar(x,y) 
+plt.show()
