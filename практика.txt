@@ -17,3 +17,40 @@ x=['a','b','c','d','f']
 y=[1,3,5,7,9]
 plt.bar(x,y) 
 plt.show()
+
+#3  import matplotlib.pyplot as plt
+x=[2,9,14,15]
+y=[3,5,7,8]
+y2=[8,6,4,2]
+plt.plot(x,y,'bo',y2,'rx')
+plt.text(9,5,'точка')
+plt.show()
+
+#4  import matplotlib.pyplot as plt
+x=[1,2,3,4]
+y=[i*3 for i in x]
+y2=[i*2+4 for i in y]
+x2=[5,3,7,9]
+y3=[i*4-1 for i in x2]
+plt.subplot(2,2,1)
+plt.plot(x,y)
+plt.subplot(2,2,2)
+plt.plot(x,y2,'r-')
+plt.subplot(2,2,3)
+plt.plot(x2,y3,'g--')
+plt.subplot(2,2,4)
+plt.plot(x2,y2,'b')
+plt.show()
+
+#5   import matplotlib.pyplot as plt
+x=[1,2,3,4]
+y=[i*3 for i in x]
+y2=[i*2+4 for i in y]
+x2=[5,3,7,9]
+y3=[i*4-1 for i in x2]
+fig, axs = plt.subplots(2, 2, figsize=(12, 7))
+axs[0, 0].plot(x, y, 'ro')
+axs[0, 1].plot(x, y2, 'g-')
+axs[1, 0].plot(x2, y3, 'bx')
+axs[1, 1].plot(x2, y2, ':')
+plt.show()
